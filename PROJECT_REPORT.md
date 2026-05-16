@@ -52,3 +52,21 @@ tiktok_downloader_bot/
 │   └── history.json
 └── tests/
     └── test_history_storage.py
+
+## 5. Arsen Defense Notes
+
+Arsen can explain the technical backend part of the project.
+
+Main points to explain:
+
+- how the `TikTokDownloader` class works
+- why the project uses `yt-dlp`
+- how short TikTok links are resolved before downloading
+- how browser cookies help with TikTok downloading
+- how `DownloadError` prevents the bot from crashing
+- how JSON download history is saved and loaded
+- how unit tests check the history storage manager
+
+Example defense answer:
+
+“In my part, I worked on the downloader and data storage. I created the TikTokDownloader class, which uses yt-dlp to download public TikTok videos. I also added support for short TikTok links and used exception handling with DownloadError. For data persistence, I created HistoryStorage, which saves user download history in a JSON file. I also added unit tests to check that the history manager works correctly.”
