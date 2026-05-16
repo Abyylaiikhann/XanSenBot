@@ -51,11 +51,11 @@ async def text_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         with open(video_path, "rb") as video:
             await update.message.reply_video(video=video)
 
-    except DownloadError:
+    except DownloadError as error:
         await update.message.reply_text(
-            "Sorry, I could not download this video.\n"
-            "Please check if the TikTok link is public and correct."
-        )
+        "Sorry, I could not download this video.\n\n"
+        f"Reason: {error}"
+    )
 
     except Exception:
         await update.message.reply_text(
