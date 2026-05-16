@@ -31,7 +31,7 @@ This project was created as a final Python project to demonstrate Telegram bot d
 Valid long TikTok link example:
 
 ```text
-https://www.tiktok.com/@username/video/123456789
+https://vt.tiktok.com/ZSxFe6exe/
 
 ## Technologies Used
 
@@ -78,3 +78,22 @@ tiktok_downloader_bot/
 └── tests/
     └── test_history_storage.py
     
+## Troubleshooting
+
+If the bot cannot download a TikTok video, possible reasons are:
+
+- The TikTok video is private.
+- The link is restricted by region.
+- TikTok blocks the request.
+- Browser cookies are not available.
+- The internet connection is unstable.
+
+Possible solutions:
+
+- Try a public TikTok video.
+- Try a long TikTok link instead of a short link.
+- Open TikTok in Google Chrome before running the bot.
+- Update `yt-dlp`:
+
+```bash
+python3 -m pip install -U yt-dlp
