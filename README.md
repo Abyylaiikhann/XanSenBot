@@ -26,6 +26,13 @@ This project was created as a final Python project to demonstrate Telegram bot d
 - Error handling for invalid links and failed downloads
 - Unit tests for JSON history storage
 
+## Usage Examples
+
+Valid long TikTok link example:
+
+```text
+https://www.tiktok.com/@username/video/123456789
+
 ## Technologies Used
 
 - Python
@@ -70,3 +77,4 @@ tiktok_downloader_bot/
 │
 └── tests/
     └── test_history_storage.py
+    
