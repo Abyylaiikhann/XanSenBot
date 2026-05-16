@@ -11,7 +11,10 @@ class TikTokLinkValidator:
         if not link:
             return False
 
-        link = link.lower()
+        link = link.strip().lower()
+
+        if not link.startswith("http"):
+            return False
 
         for domain in self.allowed_domains:
             if domain in link:
